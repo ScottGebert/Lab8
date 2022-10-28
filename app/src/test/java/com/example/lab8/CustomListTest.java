@@ -60,6 +60,13 @@ public class CustomListTest {
         });
     }
 
+    @Test
+    public void countCityTest(){
+        list = MockCityList();
+        City c = new City("Estevan", "SK");
+        list.addCity(c);
+        assertEquals(list.getCount(), 1);
+    }
 
 
 }
